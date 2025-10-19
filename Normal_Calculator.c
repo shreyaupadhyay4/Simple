@@ -6,7 +6,7 @@ int main(){
   char operations;
   printf("Choose which operation you want to perform:\n");
   printf(" + , -,  *, /  ,s(sine) , c(cosine) , t(tangent)  ,l(ln) , L(log10)\n");
-  
+  scanf("%c",&operations);
   
   if (operations=='s' || operations=='c'|| operations=='t'||operations=='L' || operations=='l'){
     printf("Enter the number: ");
@@ -63,3 +63,4 @@ int main(){
 }
     
  
+
