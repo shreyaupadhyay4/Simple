@@ -4,9 +4,11 @@ int main(){
   printf("Welcome to our Calculator\n");
   float num1, num2, result;
   char operations;
+  char repeat='y';
+  do{
   printf("Choose which operation you want to perform:\n");
   printf(" + , -,  *, /  ,s(sine) , c(cosine) , t(tangent)  ,l(ln) , L(log10)\n");
-  scanf("%c",&operations);
+  scanf(" %c",&operations);
   
   if (operations=='s' || operations=='c'|| operations=='t'||operations=='L' || operations=='l'){
     printf("Enter the number: ");
@@ -59,8 +61,13 @@ int main(){
       printf("Please enter valid operation or may be the operation is not available in our calculator. Sorry for inconvenience");
       break;
   }
+   printf("Do you want to repeat?(y/n):");
+  scanf(" %c",&repeat);
+  }while(repeat=='y' || repeat=='Y');
   return 0;
+  
 }
     
  
+
 
