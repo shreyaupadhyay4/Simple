@@ -38,15 +38,15 @@ int main(){
        printf("result is %f\n", result);
        break;
     case 's':
-      result = sin(num1);
+      result = sin(num1 * 3.14159 / 180);
       printf("result is %f\n", result);
       break;
     case 'c':
-      result = cos(num1);
+      result = cos(num1*3.14159/180);
       printf("result is %f\n", result);
       break;
     case 't':
-      result = tan(num1);
+      result = tan(num1*3.14159/180);
       printf("result is %f\n", result);
       break;
     case 'l':
@@ -69,5 +69,6 @@ int main(){
 }
     
  
+
 
 
